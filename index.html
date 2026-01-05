@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Minimal HTML5 Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a basic HTML5 document structure.</p>
-    <iframe src="2048game.com" width="450" height="500" frameborder="0" scrolling="no"></iframe>
-
+    <div class="container">
+        <h1>Guess the Number!</h1>
+        <p>Guess a number between 1 and 100:</p>
+        <input type="number" id="guessInput" min="1" max="100">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
