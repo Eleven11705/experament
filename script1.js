@@ -16,7 +16,7 @@ let spiderman = {
     vx: 0, // velocity x
     vy: 0, // velocity y
     gravity: 0.5,
-    jumpForce: -10
+    jumpForce: 10
 };
 
 // Game loop
